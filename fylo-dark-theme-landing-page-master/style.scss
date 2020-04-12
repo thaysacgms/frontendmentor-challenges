@@ -1,0 +1,232 @@
+@import "__reset";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$bg-main: hsl(218, 28%, 13%);
+$bg-footer: hsl(216, 53%, 9%);
+$bg-testimonials: hsl(219, 30%, 18%);
+$bg-singup: hsl(217, 28%, 15%);
+$text-color: hsl(0, 0%, 100%);
+$text-font: 'Open Sans';
+$heading-font: 'Raleway';
+$gradient-button: linear-gradient(150deg, rgba(101,226,217,1) 0%, hsl(198, 60%, 50%) 100%);
+
+/*gradient buttons: hsl(198, 60%, 50%) e hsl(176, 68%, 64%)*/
+
+body {
+    background: $bg-main;
+    font: {
+        size: 14px;
+        family: $text-font;
+    }
+    color: $text-color;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5% 0% 5%;
+}
+
+.logo {
+    width: 10%;
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu-options {
+    padding-left: 50px;
+
+    a {
+    text-decoration: none;
+    color: $text-color;
+    }
+}
+
+.intro {
+    text-align: center;
+
+    .intro__img {
+        width: 35%;
+        margin-top: 3%;
+    }
+
+    .intro__title {
+        font: {
+            family: $heading-font;
+            size: 35px;
+            weight: 700;
+        }
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 2%;
+        line-height: 120%;
+    }
+
+    .intro__paragraph {
+        padding-top: 1%;
+        width: 30%;
+        margin: 0 auto;
+        line-height: 150%;
+    }
+}
+
+.button {
+    background: $gradient-button;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 65px 12px 65px;
+    color: $text-color;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.block__one {
+    margin: 0 auto;
+    padding-top: 15%;
+    width: 57%;
+    text-align: center;
+
+    .service__title {
+        font: {
+            family: $heading-font;
+            weight: 700;
+        }
+    }
+
+    .first-row {
+        display: flex;
+    }
+
+    .second-row {
+        display: flex;
+        padding-top: 15%;
+    }
+
+    .service__two {
+        .icon__service {
+            width: 16%;
+        }
+    }
+
+    .service__one, .service__three {
+        margin-right: 5%;
+
+        .icon__service {
+            margin-bottom: 7%;
+        }
+
+        .service__paragraph {
+            margin-top: 2%;
+            line-height: 150%;
+        }
+    }
+
+    .service__two, .service__four {
+        margin-left: 5%;
+
+        .icon__service {
+            margin-bottom: 7%;
+        }
+
+        .service__paragraph {
+            margin-top: 2%;
+            line-height: 150%;
+        }
+    }
+}
+
+.block__two {
+    display: flex;
+    margin: 0 auto;
+    padding: 10% 10% 0% 10%;
+
+    .productive__title {
+        font: {
+            family: $heading-font;
+            weight: 700;
+            size: 35px;
+        }
+        width: 70%;
+        line-height: 125%;
+        padding-top: 20%;
+    }
+    .productive__paragraph {
+        padding-top: 5%;
+        line-height: 150%;
+    }
+
+    .column__two {
+        padding-left : 5%;
+    }
+
+    .fylo__link {
+        padding-top: 5%;
+
+        a {
+            color: rgb(95,154,156);
+        }
+
+        .icon__arrow {
+           width: 3%;
+        }
+    }
+}
+
+.block_three {
+    display: flex;
+    background-color: $bg-main;
+    justify-content: center;
+    background: url("images/bg-quotes.png") no-repeat;
+    background-position:
+    160px 100px;
+    padding-top: 8%;
+
+    .testimonial__one, .testimonial__two, .testimonial__three {
+        background-color: $bg-testimonials;
+        padding: 40px 25px 40px 25px;
+        width: 20%;
+        margin: 20px;
+    }
+
+    .testimonial__info {
+        display: flex;
+    }
+
+    .testimonial__paragraph {
+        line-height: 130%;
+        padding-bottom: 7%;
+    }
+
+    .testimonial__person {
+        padding-left: 4%;
+        width: 80%;
+
+        .testimonial__name {
+            font: {
+                family: $text-font;
+                weight: 700;
+            }
+            margin-bottom: 2%;
+        }
+    }
+
+    .testimonial__avatar {
+        width: 13%;
+        border-radius: 50%;
+    }
+
+
+
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

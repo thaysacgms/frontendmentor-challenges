@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*gradient buttons: hsl(198, 60%, 50%) e hsl(176, 68%, 64%)*/
+body {
+  background: #181f2a;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: white;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5% 5% 0% 5%;
+}
+
+.logo {
+  width: 10%;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.menu-options {
+  padding-left: 50px;
+}
+
+.menu-options a {
+  text-decoration: none;
+  color: white;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro .intro__img {
+  width: 35%;
+  margin-top: 3%;
+}
+
+.intro .intro__title {
+  font-family: "Raleway";
+  font-size: 35px;
+  font-weight: 700;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2%;
+  line-height: 120%;
+}
+
+.intro .intro__paragraph {
+  padding-top: 1%;
+  width: 30%;
+  margin: 0 auto;
+  line-height: 150%;
+}
+
+.button {
+  background: linear-gradient(150deg, #65e2d9 0%, #339ecc 100%);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 65px 12px 65px;
+  color: white;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.block__one {
+  margin: 0 auto;
+  padding-top: 15%;
+  width: 57%;
+  text-align: center;
+}
+
+.block__one .service__title {
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+.block__one .first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block__one .second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15%;
+}
+
+.block__one .service__two .icon__service {
+  width: 16%;
+}
+
+.block__one .service__one, .block__one .service__three {
+  margin-right: 5%;
+}
+
+.block__one .service__one .icon__service, .block__one .service__three .icon__service {
+  margin-bottom: 7%;
+}
+
+.block__one .service__one .service__paragraph, .block__one .service__three .service__paragraph {
+  margin-top: 2%;
+  line-height: 150%;
+}
+
+.block__one .service__two, .block__one .service__four {
+  margin-left: 5%;
+}
+
+.block__one .service__two .icon__service, .block__one .service__four .icon__service {
+  margin-bottom: 7%;
+}
+
+.block__one .service__two .service__paragraph, .block__one .service__four .service__paragraph {
+  margin-top: 2%;
+  line-height: 150%;
+}
+
+.block__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 10% 10% 0% 10%;
+}
+
+.block__two .productive__title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 35px;
+  width: 70%;
+  line-height: 125%;
+  padding-top: 20%;
+}
+
+.block__two .productive__paragraph {
+  padding-top: 5%;
+  line-height: 150%;
+}
+
+.block__two .column__two {
+  padding-left: 5%;
+}
+
+.block__two .fylo__link {
+  padding-top: 5%;
+}
+
+.block__two .fylo__link a {
+  color: #5f9a9c;
+}
+
+.block__two .fylo__link .icon__arrow {
+  width: 3%;
+}
+
+.block_three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #181f2a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("images/bg-quotes.png") no-repeat;
+  background-position: 160px 100px;
+  padding-top: 8%;
+}
+
+.block_three .testimonial__one, .block_three .testimonial__two, .block_three .testimonial__three {
+  background-color: #202a3c;
+  padding: 40px 25px 40px 25px;
+  width: 20%;
+  margin: 20px;
+}
+
+.block_three .testimonial__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block_three .testimonial__paragraph {
+  line-height: 130%;
+  padding-bottom: 7%;
+}
+
+.block_three .testimonial__person {
+  padding-left: 4%;
+  width: 80%;
+}
+
+.block_three .testimonial__person .testimonial__name {
+  font-family: "Open Sans";
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+.block_three .testimonial__avatar {
+  width: 13%;
+  border-radius: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
