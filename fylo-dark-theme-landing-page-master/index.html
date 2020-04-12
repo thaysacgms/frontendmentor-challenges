@@ -9,14 +9,18 @@
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      data-auto-a11y="true"
+    ></script>
 
 </head>
 <body>
 
   <nav>
 
-    <img class="logo" src="images/logo.svg">
+    <img class="logo" src="images/logo.svg" alt="Fylo">
     <ul class="menu">
       <li class="menu-options"><a href="">Features</a></li>
       <li class="menu-options"><a href="">Team</a></li>
@@ -28,23 +32,24 @@
   <main>
 
     <div class="intro">
-      <img class="intro__img" src="images/illustration-intro.png">
+      <img class="intro__img" src="images/illustration-intro.png" alt="People with files">
       <h1 class="intro__title">All your files in one secure location, accessible anywhere.</h1>
       <h2 class="intro__paragraph">Fylo stores all your most important files in one secure location. Access them wherever 
         you need, share and collaborate with friends family, and co-workers.</h2>
       <button class="button">Get Started</button>
     </div>
 
+  <div class="sections">
     <div class="block__one">
       <div class="first-row">
         <div class="service__one">
-          <img class="icon__service" src="images/icon-access-anywhere.svg">
+          <img class="icon__service" src="images/icon-access-anywhere.svg" alt="Computer icon">
           <h3 class="service__title">Access your files, anywhere</h3>
           <p class="service__paragraph">The ability to use a smartphone, tablet, or computer to access your account means your 
             files follow you everywhere.</p>
         </div>
         <div class="service__two">
-          <img class="icon__service" src="images/icon-security.svg">
+          <img class="icon__service" src="images/icon-security.svg" alt="Security icon">
           <h3 class="service__title">Security you can trust</h3>
           <p class="service__paragraph">2-factor authentication and user-controlled encryption are just a couple of the security 
             features we allow to help secure your files..</p>
@@ -53,23 +58,23 @@
 
       <div class="second-row">
         <div class="service__three">
-          <img class="icon__service" src="images/icon-collaboration.svg">
+          <img class="icon__service" src="images/icon-collaboration.svg" alt="Collaboration icon">
           <h3 class="service__title">  Real-time collaboration</h3>
           <p class="service__paragraph">Securely share files and folders with friends, family and colleagues for live collaboration. 
             No email attachments required.</p>
         </div>
         <div class="service__four">
-          <img class="icon__service" src="images/icon-any-file.svg">
+          <img class="icon__service" src="images/icon-any-file.svg" alt="File icon">
           <h3 class="service__title">Store any type of file</h3>
           <p class="service__paragraph">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
             file types to be securely stored and shared.</p>
         </div>    
       </div>
     </div>
-
+  
     <div class="block__two">
       <div class="column__one">
-        <img class="productive__img" src="images/illustration-stay-productive.png">
+        <img class="productive__img" src="images/illustration-stay-productive.png" alt="People sharing information">
       </div>
 
         <div class="column__two">
@@ -78,7 +83,7 @@
           storage needs.</p>
         <p class="productive__paragraph">Securely share files and folders with friends, family and colleagues for live collaboration. No email 
          attachments required.</p>
-         <p class="fylo__link"><a href="">See how Fylo works <img class="icon__arrow" src="images/icon-arrow.svg"></a></p>
+         <p class="fylo__link"><a href="">See how Fylo works <img class="icon__arrow" src="images/icon-arrow.svg" alt="Arrow icon"></a></p>
         </div>
     </div>
 
@@ -88,7 +93,7 @@
           become a well-oiled collaboration machine.</p>
           <div>
             <div class="testimonial__info">
-              <img class="testimonial__avatar" src="images/profile-1.jpg">
+              <img class="testimonial__avatar" src="images/profile-1.jpg" alt="Avatar">
               <div class="testimonial__person">
                 <p class="testimonial__name">Satish Patel</p>
                 <p class="testimonial__profession">Founder & CEO, Huddle</p>
@@ -103,7 +108,7 @@
         </p>
         <div>
           <div class="testimonial__info">
-            <img class="testimonial__avatar" src="images/profile-2.jpg">
+            <img class="testimonial__avatar" src="images/profile-2.jpg" alt="Avatar">
             <div class="testimonial__person">
               <p class="testimonial__name">Bruce McKenzie</p>
               <p class="testimonial__profession">Founder & CEO, Huddle</p>
@@ -118,27 +123,25 @@
         </p>
         <div>
           <div class="testimonial__info">
-            <img class="testimonial__avatar" src="images/profile-3.jpg">
+            <img class="testimonial__avatar" src="images/profile-3.jpg" alt="Avatar">
             <div class="testimonial__person">
               <p class="testimonial__name">Iva Boyd</p>
               <p class="testimonial__profession">Founder & CEO, Huddle</p>
             </div>
           </div>
         </div>
-
+      </div>
     </div>
-
-  </main>
-  
-  
+  </div>
+  <div class="form">
+    <h3 class="form__title">Get early access today</h3>
+    <p class="form__paragraph">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+      questions, our support team would be happy to help you.</p>
+    <input class="form__input" type="text" placeholder="email@example.com">
+    <button class="form__button">Get Started For Free</button>
+  </div>
+</main>
   <!--
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-  questions, our support team would be happy to help you.
-
-  Get Started For Free
-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
   dolore magna aliqua
 
@@ -155,10 +158,65 @@
   Privacy -->
 
   <footer>
+    <div class="footer__info">
+    <div class="first-column">
+      <div class="footer__one">
+        <img src="images/logo.svg" alt="Fylo">
+        <div class="footer__location">
+          <img class="location" src="images/icon-location.svg" alt="Location icon">
+        <p class="footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="second-column">
+      <div class="footer__two">
+        <img src="images/icon-phone.svg" alt="Phone icon">
+        <p>+1-543-123-4567</p>
+      </div>
+
+    <div class="footer__three">
+        <img src="images/icon-email.svg" alt="E-mail icon">
+        <p>example@fylo.com</p>
+      </div>
+    </div>
+
+  <div class="third-column">
+    <div class="footer__four">
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="">Press</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fourth-column">
+    <div class="footer__four">
+      <ul>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Privacy</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="fifth-column">
+    <div class="footer__five">
+      <i class="fab fa-facebook-f social"></i>
+      <i class="fab fa-twitter social"></i>
+      <i class="fab fa-instagram social"></i>
+    </div>
+  </div>
+  </div>
+<!--
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.github.com/thaysacgms">Thaysa Gomes</a>.
-    </p>
+    </p>-->
   </footer>
+
 </body>
 </html>

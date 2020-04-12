@@ -55,9 +55,9 @@ table {
 
 /*gradient buttons: hsl(198, 60%, 50%) e hsl(176, 68%, 64%)*/
 body {
-  background: #181f2a;
+  background: #1c2431;
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: white;
 }
 
@@ -69,6 +69,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5% 5% 0% 5%;
+  background: #1c2431;
 }
 
 .logo {
@@ -94,6 +95,11 @@ nav {
 
 .intro {
   text-align: center;
+  background: url("images/bg-curvy-desktop.svg") no-repeat #1c2431;
+  background-position: center bottom 0px;
+  background-size: 100% 36%;
+  padding-bottom: 8%;
+  width: 100%;
 }
 
 .intro .intro__img {
@@ -102,7 +108,7 @@ nav {
 }
 
 .intro .intro__title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 35px;
   font-weight: 700;
   width: 50%;
@@ -128,15 +134,19 @@ nav {
   cursor: pointer;
 }
 
+.sections {
+  background: #181f2a;
+}
+
 .block__one {
   margin: 0 auto;
-  padding-top: 15%;
+  padding-top: 7%;
   width: 57%;
   text-align: center;
 }
 
 .block__one .service__title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
@@ -188,14 +198,14 @@ nav {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  padding: 10% 10% 0% 10%;
+  padding: 14% 10% 0% 10%;
 }
 
 .block__two .productive__title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 35px;
-  width: 70%;
+  font-size: 40px;
+  width: 80%;
   line-height: 125%;
   padding-top: 20%;
 }
@@ -230,8 +240,8 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   background: url("images/bg-quotes.png") no-repeat;
-  background-position: 160px 100px;
-  padding-top: 8%;
+  background-position: 160px 125px;
+  padding: 10% 0% 22% 0%;
 }
 
 .block_three .testimonial__one, .block_three .testimonial__two, .block_three .testimonial__three {
@@ -258,14 +268,165 @@ nav {
 }
 
 .block_three .testimonial__person .testimonial__name {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 2%;
+}
+
+.block_three .testimonial__person .testimonial__profession {
+  font-size: 12px;
 }
 
 .block_three .testimonial__avatar {
   width: 13%;
   border-radius: 50%;
+}
+
+.block__three {
+  position: relative;
+  z-index: 2;
+}
+
+.form {
+  background-color: #1c2431;
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  padding: 4%;
+  left: 22%;
+  top: 355%;
+  width: 48%;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 4px 7px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 4px 7px -4px rgba(0, 0, 0, 0.75);
+}
+
+.form .form__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+
+.form .form__paragraph {
+  line-height: 170%;
+  margin-bottom: 5%;
+}
+
+.form .form__input {
+  border-radius: 25px;
+  border: none;
+  width: 400px;
+  height: 45px;
+  margin-right: 15px;
+}
+
+.form .form__input:focus {
+  outline: none;
+}
+
+.form .form__input::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form .form__input:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form .form__input::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form .form__input::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form .form__button {
+  background: linear-gradient(150deg, #65e2d9 0%, #339ecc 100%);
+  border: none;
+  border-radius: 25px;
+  padding: 16px 35px 16px 35px;
+  color: white;
+  margin-top: 2%;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+input[type=text] {
+  padding-left: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  position: relative;
+  background-color: #0b1523;
+  z-index: 0;
+  padding-top: 18%;
+  padding-left: 8%;
+  padding-bottom: 10%;
+}
+
+footer .first-column {
+  width: 25%;
+  margin-right: 5%;
+}
+
+footer .first-column .footer__paragraph {
+  line-height: 150%;
+}
+
+footer .first-column .footer__location {
+  margin-top: 8%;
+}
+
+footer .first-column .location {
+  height: 2%;
+  margin-right: 6%;
+}
+
+footer .footer__info, footer .footer__location, footer .footer__two, footer .footer__three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .second-column {
+  margin-top: 6.2%;
+}
+
+footer .second-column img {
+  margin-right: 10%;
+}
+
+footer .second-column .footer__two {
+  margin-bottom: 15%;
+}
+
+footer .third-column, footer .fourth-column, footer .fifth-column {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+footer .third-column li, footer .fourth-column li, footer .fifth-column li {
+  margin-top: 25%;
+}
+
+footer .third-column a, footer .fourth-column a, footer .fifth-column a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .fifth-column {
+  width: 20%;
+}
+
+footer .social {
+  border: 1px solid #fff;
+  padding: 6%;
+  border-radius: 50%;
+  margin-right: 5%;
 }
 
 .attribution {

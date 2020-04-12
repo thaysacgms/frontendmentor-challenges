@@ -1,20 +1,22 @@
-@import "__reset";
+@import "reset";
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+$bg-intro: hsl(217, 28%, 15%);
 $bg-main: hsl(218, 28%, 13%);
 $bg-footer: hsl(216, 53%, 9%);
 $bg-testimonials: hsl(219, 30%, 18%);
 $bg-singup: hsl(217, 28%, 15%);
 $text-color: hsl(0, 0%, 100%);
-$text-font: 'Open Sans';
-$heading-font: 'Raleway';
+$text-font: 'Open Sans', sans-serif;
+$heading-font: 'Raleway', sans-serif;
 $gradient-button: linear-gradient(150deg, rgba(101,226,217,1) 0%, hsl(198, 60%, 50%) 100%);
 
 /*gradient buttons: hsl(198, 60%, 50%) e hsl(176, 68%, 64%)*/
 
 body {
-    background: $bg-main;
+    background: $bg-intro;
+    
     font: {
         size: 14px;
         family: $text-font;
@@ -26,6 +28,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 5% 5% 0% 5%;
+    background: $bg-intro;
 }
 
 .logo {
@@ -49,6 +52,11 @@ nav {
 
 .intro {
     text-align: center;
+    background: url('images/bg-curvy-desktop.svg') no-repeat $bg-intro;
+    background-position: center bottom 0px;
+    background-size: 100% 36%;
+    padding-bottom: 8%;
+    width: 100%;
 
     .intro__img {
         width: 35%;
@@ -85,9 +93,13 @@ nav {
     cursor: pointer;
 }
 
+.sections {
+    background: $bg-main;
+}
+
 .block__one {
     margin: 0 auto;
-    padding-top: 15%;
+    padding-top: 7%;
     width: 57%;
     text-align: center;
 
@@ -143,15 +155,15 @@ nav {
 .block__two {
     display: flex;
     margin: 0 auto;
-    padding: 10% 10% 0% 10%;
+    padding: 14% 10% 0% 10%;
 
     .productive__title {
         font: {
             family: $heading-font;
             weight: 700;
-            size: 35px;
+            size: 40px;
         }
-        width: 70%;
+        width: 80%;
         line-height: 125%;
         padding-top: 20%;
     }
@@ -183,8 +195,8 @@ nav {
     justify-content: center;
     background: url("images/bg-quotes.png") no-repeat;
     background-position:
-    160px 100px;
-    padding-top: 8%;
+    160px 125px;
+    padding: 10% 0% 22% 0%; 
 
     .testimonial__one, .testimonial__two, .testimonial__three {
         background-color: $bg-testimonials;
@@ -213,14 +225,151 @@ nav {
             }
             margin-bottom: 2%;
         }
+
+        .testimonial__profession {
+            font-size: 12px;
+        }
     }
 
     .testimonial__avatar {
         width: 13%;
         border-radius: 50%;
     }
+}
 
+.block__three{
+    position: relative;
+    z-index: 2;
+}
 
+.form {
+    background-color: $bg-singup;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    padding: 4%;
+    left: 22%;
+    top: 355%;
+    width: 48%;
+    border-radius: 10px;
+    box-shadow: 6px 4px 7px -4px rgba(0,0,0,0.75);
+
+    .form__title {
+        font: {
+            family: $heading-font;
+            size: 40px;
+            weight: 700;
+        }
+        margin-bottom: 3%;
+    }
+
+    .form__paragraph {
+        line-height: 170%;
+        margin-bottom: 5%;
+    }
+
+    .form__input {
+        border-radius: 25px;
+        border: none;
+        width: 400px;
+        height: 45px;
+        margin-right: 15px;
+        
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            font-family: $text-font;
+        }
+    }
+
+    .form__button {
+    background: $gradient-button;
+    border: none;
+    border-radius: 25px;
+    padding: 16px 35px 16px 35px;
+    color: $text-color;
+    margin-top: 2%;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font: {
+        weight: 700;
+        size: 14px;
+        }
+    }
+}
+
+input[type=text] {
+    padding-left: 30px;
+    font-family: $text-font;
+}
+
+footer {
+    position: relative;
+    background-color: $bg-footer;
+    z-index: 0;
+    padding-top: 18%;
+    padding-left: 8%;
+    padding-bottom: 10%;
+
+    .first-column {
+        width: 25%;
+        margin-right: 5%;
+
+        .footer__paragraph {
+            line-height: 150%;
+        }
+
+        .footer__location {
+            margin-top: 8%;
+        }
+
+        .location {
+            height: 2%;
+            margin-right: 6%;
+        }
+    }
+
+    .footer__info, .footer__location, .footer__two, .footer__three {
+        display: flex;
+    }
+
+    .second-column {
+        margin-top: 6.2%;
+
+        img {
+            margin-right: 10%;
+        }
+
+        .footer__two {
+            margin-bottom: 15%;
+        }
+    }
+
+    .third-column, .fourth-column, .fifth-column {
+        margin-left: 8%;
+        margin-top: 5%;
+
+        li {
+            margin-top: 25%;
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+        }
+    }
+
+    .fifth-column { 
+        width: 20%;
+    }
+
+    .social {
+        border: 1px solid #fff;
+        padding: 6%;
+        border-radius: 50%;
+        margin-right: 5%;
+    }
 
 }
 
