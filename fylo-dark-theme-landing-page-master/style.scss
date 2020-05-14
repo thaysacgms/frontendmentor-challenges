@@ -12,13 +12,11 @@ $text-font: 'Open Sans', sans-serif;
 $heading-font: 'Raleway', sans-serif;
 $gradient-button: linear-gradient(150deg, rgba(101,226,217,1) 0%, hsl(198, 60%, 50%) 100%);
 
-/*gradient buttons: hsl(198, 60%, 50%) e hsl(176, 68%, 64%)*/
-
 body {
     background: $bg-intro;
     
     font: {
-        size: 14px;
+        size: 1rem;
         family: $text-font;
     }
     color: $text-color;
@@ -33,6 +31,10 @@ nav {
 
 .logo {
     width: 10%;
+
+    @media only screen and (max-width: 600px)  {
+        width: 20%;
+    }
 }
 
 .menu {
@@ -58,9 +60,18 @@ nav {
     padding-bottom: 8%;
     width: 100%;
 
+    @media only screen and (max-width: 600px)  {
+        margin-top: 6%;
+    }
+
     .intro__img {
         width: 35%;
         margin-top: 3%;
+
+        @media only screen and (max-width: 600px)  {
+            width: 70%;
+            margin-top: 6%;
+        }
     }
 
     .intro__title {
@@ -73,6 +84,11 @@ nav {
         margin: 0 auto;
         margin-top: 2%;
         line-height: 120%;
+
+        @media only screen and (max-width: 600px)  {
+            width: 90%;
+            margin-top: 6%;
+        }
     }
 
     .intro__paragraph {
@@ -80,6 +96,11 @@ nav {
         width: 30%;
         margin: 0 auto;
         line-height: 150%;
+
+        @media only screen and (max-width: 600px)  {
+            width: 70%;
+            margin-top: 3%;
+        }
     }
 }
 
@@ -87,10 +108,14 @@ nav {
     background: $gradient-button;
     border: none;
     border-radius: 25px;
-    padding: 12px 65px 12px 65px;
+    padding: 0.9rem 4rem;
     color: $text-color;
     margin-top: 2%;
     cursor: pointer;
+
+    @media only screen and (max-width: 600px)  {
+        margin-top: 7%;
+    }
 }
 
 .sections {
@@ -103,6 +128,10 @@ nav {
     width: 57%;
     text-align: center;
 
+    @media only screen and (max-width: 600px)  {
+       width: 70%;
+    }
+
     .service__title {
         font: {
             family: $heading-font;
@@ -112,21 +141,38 @@ nav {
 
     .first-row {
         display: flex;
+
+        @media only screen and (max-width: 600px)  {
+            flex-direction: column;
+        }
     }
 
     .second-row {
         display: flex;
         padding-top: 15%;
+
+        @media only screen and (max-width: 600px)  {
+            padding-top: 0%;
+            flex-direction: column;
+        }
     }
 
     .service__two {
         .icon__service {
             width: 16%;
+            
+            @media only screen and (max-width: 600px)  {
+                width: 18%;
+            }
         }
     }
 
     .service__one, .service__three {
-        margin-right: 5%;
+
+        @media only screen and (max-width: 600px)  {
+            margin-right: 0%;
+            margin-top: 20%;
+        }
 
         .icon__service {
             margin-bottom: 7%;
@@ -135,12 +181,21 @@ nav {
         .service__paragraph {
             margin-top: 2%;
             line-height: 150%;
+
+            @media only screen and (max-width: 600px)  {
+                margin-top: 6%;
+            }
         }
     }
 
     .service__two, .service__four {
         margin-left: 5%;
 
+        @media only screen and (max-width: 600px)  {
+            margin-left: 0%;
+            margin-top: 15%;
+        }
+
         .icon__service {
             margin-bottom: 7%;
         }
@@ -148,14 +203,32 @@ nav {
         .service__paragraph {
             margin-top: 2%;
             line-height: 150%;
+
+            @media only screen and (max-width: 600px)  {
+                margin-top: 6%;
+            }
         }
     }
 }
+
 
 .block__two {
     display: flex;
     margin: 0 auto;
     padding: 14% 10% 0% 10%;
+
+    @media only screen and (max-width: 600px)  {
+        flex-direction: column;
+        margin-top: 6%;
+    }
+
+    .column__one {
+        .productive__img {
+            @media only screen and (max-width: 600px)  {
+                width: 100%;
+        }
+    }
+}
 
     .productive__title {
         font: {
@@ -166,7 +239,13 @@ nav {
         width: 80%;
         line-height: 125%;
         padding-top: 20%;
+
+        @media only screen and (max-width: 600px)  {
+            width: 100%;
+
+        }
     }
+
     .productive__paragraph {
         padding-top: 5%;
         line-height: 150%;
@@ -196,13 +275,26 @@ nav {
     background: url("images/bg-quotes.png") no-repeat;
     background-position:
     160px 125px;
-    padding: 10% 0% 22% 0%; 
+    padding: 10% 0% 20% 0%; 
+
+    @media only screen and (max-width: 600px)  {
+        flex-direction: column;
+        margin-top: 6%;
+        background-position:
+        50px 50px;
+        padding: 10% 0% 55% 0%; 
+    }
 
     .testimonial__one, .testimonial__two, .testimonial__three {
         background-color: $bg-testimonials;
         padding: 40px 25px 40px 25px;
         width: 20%;
         margin: 20px;
+
+        @media only screen and (max-width: 600px)  {
+            width: 70%;
+            margin: 6% auto;
+        }
     }
 
     .testimonial__info {
@@ -212,6 +304,10 @@ nav {
     .testimonial__paragraph {
         line-height: 130%;
         padding-bottom: 7%;
+
+        @media only screen and (max-width: 600px)  {
+            line-height: 190%;
+        }
     }
 
     .testimonial__person {
@@ -237,35 +333,58 @@ nav {
     }
 }
 
-.block__three{
-    position: relative;
-    z-index: 2;
+.container-form {
+    background-color: $bg-main;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    transform: translateY(-10rem);
+
+    @media only screen and (max-width: 600px)  {
+        transform: translateY(-13rem)
+    }
+
 }
 
 .form {
     background-color: $bg-singup;
-    position: absolute;
-    z-index: 100;
     text-align: center;
     padding: 4%;
-    left: 22%;
-    top: 355%;
     width: 48%;
     border-radius: 10px;
     box-shadow: 6px 4px 7px -4px rgba(0,0,0,0.75);
 
+    @media only screen and (max-width: 600px)  {
+        width: 70%;
+        padding: 8%;
+        margin: 0 auto;
+    }
+
     .form__title {
         font: {
             family: $heading-font;
-            size: 40px;
+            size: 2.5rem;
             weight: 700;
         }
+
         margin-bottom: 3%;
+
+        @media only screen and (max-width: 600px)  {
+            font-size: 1.2rem;
+            margin-bottom: 6%;
+        }
     }
 
     .form__paragraph {
         line-height: 170%;
         margin-bottom: 5%;
+
+        @media only screen and (max-width: 600px)  {
+            width: 90%;
+            margin: 7% auto;
+        }
     }
 
     .form__input {
@@ -274,6 +393,10 @@ nav {
         width: 400px;
         height: 45px;
         margin-right: 15px;
+
+        @media only screen and (max-width: 600px)  {
+            width: 70%;
+        }
         
         &:focus {
             outline: none;
@@ -287,7 +410,7 @@ nav {
     background: $gradient-button;
     border: none;
     border-radius: 25px;
-    padding: 16px 35px 16px 35px;
+    padding: 1rem 2.1rem;
     color: $text-color;
     margin-top: 2%;
     letter-spacing: 0.5px;
@@ -296,7 +419,14 @@ nav {
         weight: 700;
         size: 14px;
         }
+
+        @media only screen and (max-width: 600px)  {
+            padding: 1rem 4.3rem;
+            margin-top: 8%;
+        }
     }
+
+
 }
 
 input[type=text] {
@@ -305,16 +435,22 @@ input[type=text] {
 }
 
 footer {
-    position: relative;
     background-color: $bg-footer;
-    z-index: 0;
-    padding-top: 18%;
+    padding-top: 16%;
     padding-left: 8%;
-    padding-bottom: 10%;
+    padding-bottom: 8%;
+
+    @media only screen and (max-width: 600px)  {
+        padding-top: 50%;
+    }
 
     .first-column {
         width: 25%;
         margin-right: 5%;
+
+        @media only screen and (max-width: 600px)  {
+            width: 80%;
+        }
 
         .footer__paragraph {
             line-height: 150%;
@@ -334,11 +470,27 @@ footer {
         display: flex;
     }
 
+    .footer__info {
+    @media only screen and (max-width: 600px)  {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
     .second-column {
         margin-top: 6.2%;
 
+        @media only screen and (max-width: 600px)  {
+            margin-top: 6%;
+        }
+
         img {
             margin-right: 10%;
+
+            @media only screen and (max-width: 600px)  {
+                margin-right: 4%;
+            }
         }
 
         .footer__two {
@@ -352,6 +504,10 @@ footer {
 
         li {
             margin-top: 25%;
+
+            @media only screen and (max-width: 600px)  {
+                margin-top: 5%;
+            }
         }
 
         a {
@@ -362,6 +518,11 @@ footer {
 
     .fifth-column { 
         width: 20%;
+
+        @media only screen and (max-width: 600px)  {
+            padding-top: 5%;
+            width: 50%;
+        }
     }
 
     .social {
@@ -369,13 +530,23 @@ footer {
         padding: 6%;
         border-radius: 50%;
         margin-right: 5%;
+
     }
 
-}
+    .facebook {
+       padding: 6% 7%;
+    }
 
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+     .credits {
+         margin-top: 5%;
+         a {
+        text-decoration: none;
+        color: $text-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        }
+
 }
